@@ -1,35 +1,50 @@
-<template >
-    <div class="header">
-        <div class="logo">
-        <h1 >MediDrinks</h1>
-        <p>Brasília, DF</p>
-        <p class="git"> <img src="https://www.flaticon.com/svg/vstatic/svg/733/733609.svg?token=exp=1617242695~hmac=9427f1910948e0bbbcdb1c8dc08dc906" class="imgGit">@ryandls</p>
-        </div>
-    </div>
+<template>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 >MediDrinks</h1>       
+                <span>Brasília, DF</span>
+            </div>
+        
+            <button> <img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="imgGit">@ryandls</button>
+         
+       </nav>
+    </header>
 </template>
 <script>
 export default {
     
 }
 </script>
-<style>
-.header {
+<style scoped>
+header {
     width: 100vw;
     height: 8vh;
-    background: rgb(250, 248, 248);
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
 }
 .logo{
-    margin-left: 4vh;
+    margin-left: 1rem;
     font-size: 10px;
-    padding: 6px;
+
 }
-.git {
-    position: absolute;
-    display: flex-block;
-    right:0;
+button{
+    width:20vh;
+    background: white;
+
+    border:1px solid;
+    border-radius:10px;
+    border-color: grey;
+
 }
 .imgGit{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
+    
 }
 </style>

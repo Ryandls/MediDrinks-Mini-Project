@@ -1,21 +1,24 @@
 <template>
   <div id="">
- <Header/>
- <mainBody/>
+  <Header/>
+  <mainBody/>
+  <bodyTable/>
   </div>
 
 </template>
 
 <script>
 
-import Header from './components/header';
-import mainBody from './components/mainBody';
+import Header from './components/header.vue';
+import mainBody from './components/mainBody.vue';
+import bodyTable from  './components/bodyTable.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    mainBody
+    mainBody,
+    bodyTable,
   }
 }
 </script>
@@ -28,9 +31,4 @@ export default {
     box-sizing: border-box;
   }
   
-  body{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  }
 </style>
