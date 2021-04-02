@@ -3,7 +3,7 @@
     <img :src="imgsrc" :alt="description" />
     <div class="card__description">
       <p>{{ description }}</p>
-      <span>{{ id }}</span>
+      <span>#{{ id }}</span>
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card {
   box-sizing: border-box;
   display: flex;

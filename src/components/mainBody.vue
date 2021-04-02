@@ -1,10 +1,9 @@
 <template>
-  <div class="searcStatus">
+  <div class="mainBody">
     <h1>
-      Os melhores drinks não alcoólicos do <span class="textBlue">Brasil</span>
+      Os melhores drinks não-alcoólicos do <span class="textBlue">Brasil</span>
     </h1>
-    <p></p>
-    <p>Foram encontrados {{ found }} resultados.</p>
+    <p>{{ found }} resultados encontrados.</p>
   </div>
 </template>
 
@@ -17,16 +16,24 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 .mainBody {
   width: 100vw;
-  justify-content: center;
-  padding: 2rem 5rem 5rem 3rem;
+  padding: 1rem 2rem 2rem 4rem;
+  margin-top: 30px;
+
 }
 
+h1 {
+    font-size: 24px;
+}
+p{
+    color:grey;
+}
 .textBlue {
-  color: blue;
+  font-size: 24px;
+  color: rgb(0, 162, 255);
 }
 
 </style>
