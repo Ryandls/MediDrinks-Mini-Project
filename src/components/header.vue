@@ -15,11 +15,8 @@
       </div>
 
       <div class="github">
-        <a 
-          target="_blank"
-          href="https://github.com/Ryandls"
-        >
-          <img src="https://image.flaticon.com/icons/png/512/25/25231.png"/>
+        <a target="_blank" href="https://github.com/Ryandls">
+          <img src="https://image.flaticon.com/icons/png/512/25/25231.png" />
           @ryandls
         </a>
       </div>
@@ -41,12 +38,12 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
-  border-bottom: 1.5px solid grey;
+  padding: 0.6rem;
+  border-bottom: 1.8px solid rgb(102, 101, 101);
 }
 
 a {
-color:black;
+  color: black;
   text-decoration: none;
 }
 a:visited {
@@ -55,7 +52,8 @@ a:visited {
 img {
   width: 15px;
   height: 15px;
-  margin-right: 8px;
+  margin-top: 5px;
+  margin-right: 7px;
 }
 h1 {
   font-size: 18px;
@@ -68,11 +66,11 @@ span {
   font-size: 14px;
 }
 
-.github{
-  width: 110px;
-  height: 27px;
+.github {
+  width: 120px;
+  height: 30px;
   margin: 0.3rem 1rem 0 0;
-  border:1px solid grey;
+  border: 1px solid grey;
   border-radius: 5px;
 }
 </style>

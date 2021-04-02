@@ -11,6 +11,7 @@
 </template>
 
 <script>
+
 import DrinkCard from './Card';
 export default {
   name: 'DrinkList',
@@ -27,6 +28,4 @@ export default {
   display: flex;
   flex-wrap: wrap;
 }
-
 </style>
-a
