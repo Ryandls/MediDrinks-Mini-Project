@@ -1,6 +1,6 @@
 <template>
   <div>
-    <FilterHeader />
+    <FilterHeader :propsDrink="propsDrink"/>
     <FilterData :propsDrink="propsDrink"/>
 
   </div>

@@ -13,15 +13,18 @@
         <li>
           <span> Catálogo > </span>
         </li>
-        <li>
-          Afterglow
+        <li v-for="drink of propsDrink" :key="drink.strDrink">
+          {{ drink.strDrink }}
         </li>
       </ul>
     </div>
   </header>
 </template>
 <script>
-export default {};
+export default {
+  name: "FilterHeader",
+  props: ["propsDrink"],
+};
 </script>
 <style scoped>
 h1 {
@@ -47,7 +50,7 @@ ul li {
   justify-content: center;
   padding: 2rem;
 }
-.divLink { 
+.divLink {
   margin-left: 22%;
   padding-bottom: 5px;
 }
