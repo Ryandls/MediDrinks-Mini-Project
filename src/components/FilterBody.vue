@@ -2,20 +2,20 @@
   <body>
     <div class="divMain">
       <div class="divImg">
-        <img
-          src="https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vuquyv1468876052.jpg"
-          alt="Afterglow"
+        <img 
+        :src="imgsrc" 
+        :alt="description" 
         />
       </div>
       <div class="propsDrink">
-        <h1>Afterglow</h1>
-        <h2><span>#12560</span></h2>
+        <h1>{{description}}</h1>
+        <h2><span>#{{id}}</span></h2>
 
         <div class="divise">
           <div class="Category">
-            <p>Categoria: Cocktail</p>
-            <p>Alcoólico: Não-alcoólico</p>
-            <p>Copo de servir: Highball Glass</p>
+            <p>Categoria: {{category}}</p>
+            <p>Alcoólico: {{alcoholic}}</p>
+            <p>Copo de servir: {{glass}}</p>
           </div>
 
           <ul class="tab">
@@ -32,9 +32,9 @@
           <div class="Ingredient">
             <ul>
               <p>Ingredientes</p>
-              <li>Grenadine</li>
-              <li>Orange Juice</li>
-              <li>Pineapple Juice</li>
+              <li>{{ingredient1}}</li>
+              <li>{{ingredient2}}</li>
+              <li>{{ingredient3}}</li>
             </ul>
           </div>
         </div>
@@ -44,15 +44,20 @@
 </template>
 
 <script>
-
-
-
 export default {
-  name: 'FilterBody',
+  name: "FilterBody",
+  props: {
+    id: Number,
+    imgsrc: String,
+    description: String,
+    alcoholic: String,
+    glass: String,
+    category: String,
+    ingredient1: String,
+    ingredient2: String,
+    ingredient3: String,
+  },
 };
-
-
-
 </script>
 
 <style scoped>
@@ -118,7 +123,7 @@ button {
 .Ingredient {
   padding-top: 3rem;
 }
-span{
-   color:grey;
+span {
+  color: grey;
 }
 </style>

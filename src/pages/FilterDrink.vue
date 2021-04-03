@@ -1,19 +1,22 @@
 <template>
   <div>
-    <Header />
-    <Body />
+    <FilterHeader />
+    <FilterData :propsDrink="propsDrink"/>
+
   </div>
 </template>
 <script>
-import Header from "../components/FilterHeader.vue";
-import Body from "../components/FilterBody.vue";
+
+import FilterHeader from "../components/FilterHeader.vue";
+import FilterData from "../components/FilterData.vue"
 import axios from "axios";
 
 export default {
   name: "FilterDrink",
   components: {
-    Header,
-    Body,
+    FilterHeader,
+    FilterData
+
   },
   data() {
     return {

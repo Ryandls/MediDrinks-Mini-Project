@@ -15,7 +15,7 @@
 import DrinkCard from './Card';
 export default {
   name: 'DrinkList',
-  components: { DrinkCard },
+  components:  {DrinkCard} ,
 
   props: ['drinkList'],
 };
