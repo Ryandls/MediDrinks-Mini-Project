@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../pages/Home.vue'
-import DrinkFilter from '../pages/DrinkFilter.vue'
+import FilterDrink from '../pages/FilterDrink.vue'
 
 Vue.use(Router);
 
@@ -12,8 +12,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/drink/:id', name: 'DrinkFilter',
-      component: DrinkFilter, props: true
+      path: '/drink/:id', name: 'FilterDrink',
+      component: FilterDrink, props: true
     },
     {
       path:'/', redirect: 'Home'

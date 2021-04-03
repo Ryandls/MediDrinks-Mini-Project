@@ -1,9 +1,11 @@
 <template>
   <div class="mainBody">
+  <div>
     <h1>
       Os melhores drinks não-alcoólicos do <span class="textBlue">Brasil</span>
     </h1>
     <p>{{ found }} resultados encontrados.</p>
+    </div>
   </div>
 </template>
 
@@ -19,9 +21,7 @@ export default {
 <style scoped>
 
 .mainBody {
-  width: 100vw;
-  padding: 1rem 2rem 2rem 4rem;
-  margin-top: 30px;
+  padding: 2rem 0 2rem 4rem;
 
 }
 
