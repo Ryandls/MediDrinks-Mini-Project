@@ -22,7 +22,7 @@ export default {
 
 .mainBody {
 
-  padding: 0 1rem 2rem 4rem;
+  padding: 0 0 2rem 4rem;
 
 }
 
