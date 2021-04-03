@@ -2,27 +2,26 @@
   <body>
     <div class="divMain">
       <div class="divImg">
-        <img 
-        :src="imgsrc" 
-        :alt="description" 
-        />
+        <img :src="imgsrc" :alt="description" />
       </div>
       <div class="propsDrink">
-        <h1>{{description}}</h1>
-        <h2><span>#{{id}}</span></h2>
+        <h1>{{ description }}</h1>
+        <h2>
+          <span>#{{ id }}</span>
+        </h2>
 
-        <div class="divise">
+        <div class="div">
           <div class="Category">
-            <p>Categoria: {{category}}</p>
-            <p>Alcoólico: {{alcoholic}}</p>
-            <p>Copo de servir: {{glass}}</p>
+            <p>Categoria: {{ category }}</p>
+            <p>Alcoólico: {{ alcoholic }}</p>
+            <p>Copo de servir: {{ glass }}</p>
           </div>
 
           <ul class="tab">
-            <lu>XS</lu>
-            <lu>S</lu>
-            <lu>M</lu>
-            <lu>L</lu>
+            <button>XS</button>
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
           </ul>
           <router-link :to="{ name: 'Home' }">
             <button class="btn btn-lg btn-primary">
@@ -32,9 +31,9 @@
           <div class="Ingredient">
             <ul>
               <p>Ingredientes</p>
-              <li>{{ingredient1}}</li>
-              <li>{{ingredient2}}</li>
-              <li>{{ingredient3}}</li>
+              <li>{{ ingredient1 }}</li>
+              <li>{{ ingredient2 }}</li>
+              <li>{{ ingredient3 }}</li>
             </ul>
           </div>
         </div>
@@ -61,13 +60,12 @@ export default {
 </script>
 
 <style scoped>
-body {
-  width: 100vw;
-  height: 100wv;
-}
+
 img {
-  width: 500px;
+  width: 450px;
+  min-width: 450;
   height: 550px;
+  min-height: 550;
 }
 .divMain {
   display: flex;
@@ -88,18 +86,17 @@ img {
 .tab {
   display: flex;
 }
-.tab lu {
+.tab button {
   text-align: center;
   border: 1px solid grey;
   border-radius: 5px;
   font-size: 2rem;
   width: 4rem;
   margin-bottom: 2rem;
+  background-color: white;
 }
-lu {
-  width: 200px;
-}
-lu:hover {
+
+.tab button:hover {
   background-color: #d3d3d3;
   cursor: pointer;
 }
@@ -107,7 +104,7 @@ lu:hover {
 li {
   list-style-image: url("../assets/arrow-right.svg");
 }
-.divise {
+.div {
   padding-top: 6rem;
 }
 ul li {

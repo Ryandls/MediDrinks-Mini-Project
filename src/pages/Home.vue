@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <MainBody :found="drinkList.length" />
+    <div class="divise">
+      <MainBody :found="drinkList.length" />
+    </div>
     <DataCards :drinkList="drinkList" />
   </div>
 </template>
@@ -35,4 +37,9 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.divise {
+  border-top: 1px solid rgb(173, 173, 173);
+  margin-top: 1rem;
+}
+</style>

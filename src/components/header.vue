@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <div>
+      <div class="logoMain">
         <h1><span>Medi</span>Drinks</h1>
         <a
           target="_blank"
@@ -28,12 +28,12 @@ export default {};
 
 <style scoped>
 header {
-  border-bottom: 1px solid rgb(102, 101, 101);
+
+  padding: 1rem 2rem 0;
 }
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 2rem 2rem;
 }
 
 a {
@@ -47,20 +47,21 @@ img {
   margin-right: 5px;
 }
 h1 {
-  font-size: 18px;
+  font-size: 24px;
 }
 span {
   color: rgb(0, 162, 255);
 }
 .logGithub{
-  margin: 2rem 2rem 1rem ;
-  padding: 1rem 4rem 1rem;
+  margin: 2rem 0 2rem;
+  padding: 1rem 5rem 1rem;
   border:1px solid rgba(167, 162, 162, 0.671);
   border-radius: 6px;
   cursor:pointer;
 }
 
 .logGithub:hover{
-background: rgba(198, 198, 199, 0.932);
+background: rgba(222, 222, 223, 0.959);
 }
+
 </style>

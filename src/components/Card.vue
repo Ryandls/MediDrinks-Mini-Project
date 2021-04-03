@@ -41,17 +41,17 @@ export default {
 .card img {
   width: 320px;
   height: 280px;
+ 
 }
 .card__description {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 5rem;
+  box-sizing: border-box ;
+  display: flex ;
+  justify-content: center ;
+  flex-direction: column ;
+  height: 7rem;
   padding-left: 1.5rem;
   background-color: rgba(240, 240, 240, 0.152);
-
+ 
 }
 .card__description p {
   margin: 0.25rem;

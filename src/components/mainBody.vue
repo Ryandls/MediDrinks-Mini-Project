@@ -21,8 +21,7 @@ export default {
 <style scoped>
 
 .mainBody {
-
-  padding: 0 0 2rem 4rem;
+  padding: 2rem 0 2rem 4rem;
 
 }
 

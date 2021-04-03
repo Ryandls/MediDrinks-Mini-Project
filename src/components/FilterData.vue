@@ -18,7 +18,6 @@
 
 <script>
 import FilterBody from "./FilterBody";
-
 export default {
   name: "FilterData",
   components: { FilterBody },

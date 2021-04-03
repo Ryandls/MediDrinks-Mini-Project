@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerCard">
     <drink-card
       v-for="drink of drinkList"
       :key="drink.idDrink"
@@ -11,18 +11,17 @@
 </template>
 
 <script>
-
-import DrinkCard from './Card';
+import DrinkCard from "./Card";
 export default {
-  name: 'DrinkList',
-  components:  {DrinkCard} ,
+  name: "DrinkList",
+  components: { DrinkCard },
 
-  props: ['drinkList'],
+  props: ["drinkList"],
 };
 </script>
 
 <style>
-.container {
+.containerCard {
   justify-content: center;
   gap: 1rem;
   display: flex;
