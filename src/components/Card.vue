@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <router-link :to="{ name: 'DrinkFilter', params: {id} }">
+    <router-link :to="{ name: 'FilterDrink', params: {id} }">
 
     <img :src="imgsrc" :alt="description" />
     <div class="card__description">
