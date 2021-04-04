@@ -12,14 +12,10 @@
         </a>
       </div>
 
-      <button
-        class="logGithub"
-        target="_blank"
-        href="https://github.com/Ryandls"
-      >
+      <a class="logGithub" target="_blank" href="https://github.com/Ryandls">
         <img src="../assets/github.svg" />
         @ryandls
-      </button>
+      </a>
     </nav>
   </header>
 </template>
