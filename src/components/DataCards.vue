@@ -1,5 +1,5 @@
 <template>
-  <div class="containerCard">
+  <div :class="classDataView">
     <drink-card
       v-for="drink of drinkList"
       :key="drink.idDrink"
@@ -16,15 +16,8 @@ export default {
   name: "DrinkList",
   components: { DrinkCard },
 
-  props: ["drinkList"],
+  props: ["drinkList", "classDataView"],
 };
 </script>
 
-<style>
-.containerCard {
-  justify-content: center;
-  gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-</style>
+<style></style>

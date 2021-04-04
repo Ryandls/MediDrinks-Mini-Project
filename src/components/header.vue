@@ -62,16 +62,16 @@ span {
   align-items: center;
 
   background-color: #fcfcfc00;
-  border: 1px solid rgba(167, 162, 162, 0.671);
+  border: 1px solid rgba(197, 194, 194, 0.796);
   border-radius: 6px;
   cursor: pointer;
 }
 
 .logGithub:hover {
-  background: rgba(222, 222, 223, 0.959);
+  background: #e1e3e4;
 }
 
 .logoMain {
-  margin-left: 3rem;
+  margin: 1.5rem 0 0 3rem;
 }
 </style>

@@ -1,19 +1,21 @@
 <template>
-  <div class="divLink">
-    <ul>
-      <li>
-        <router-link :to="{ name: 'Home' }">
-          <span> Home > </span>
-        </router-link>
-      </li>
-      <li>
-        <span> Catálogo > </span>
-      </li>
-      <li v-for="drink of propsDrink" :key="drink.strDrink">
-        {{ drink.strDrink }}
-      </li>
-    </ul>
-    <div></div>
+  <div>
+    <div class="divLink">
+      <ul>
+        <li>
+          <router-link :to="{ name: 'Home' }">
+            <span> Home > </span>
+          </router-link>
+        </li>
+        <li>
+          <span> Catálogo > </span>
+        </li>
+        <li v-for="drink of propsDrink" :key="drink.strDrink">
+          {{ drink.strDrink }}
+        </li>
+      </ul>
+      <div></div>
+    </div>
   </div>
 </template>
 
@@ -34,11 +36,15 @@ ul {
 ul li {
   margin-left: 10px;
 }
+span {
+  color: grey;
+}
 .divLink {
   display: grid;
   grid-template-columns: 55% 45%;
   padding-bottom: 15px;
 }
+
 @media (max-width: 800px) {
   .divLink {
     display: flex;

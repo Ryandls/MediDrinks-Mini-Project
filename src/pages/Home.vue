@@ -2,9 +2,9 @@
   <div>
     <Header />
     <div class="divise">
-      <MainBody :found="drinkList.length" />
+      <MainBody :found="drinkList.length" :dataView="dataView" />
     </div>
-    <DataCards :drinkList="drinkList" />
+    <DataCards :drinkList="drinkList" :classDataView="classDataView" />
   </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       drinkList: [],
+      classDataView: "containerCard",
     };
   },
   mounted() {
@@ -35,11 +36,22 @@ export default {
       .then((res) => (this.drinkList = res.data.drinks))
       .catch((error) => console.log(error));
   },
+  methods: {
+    dataView(value) {
+      this.classDataView = value;
+    },
+  },
 };
 </script>
 <style>
 .divise {
   border-top: 1px solid rgb(173, 173, 173);
   margin-top: 1rem;
+}
+.containerCard {
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
