@@ -1,26 +1,24 @@
 <template>
   <div id="app">
-  <router-view></router-view>
-
+    <router-view></router-view>
   </div>
-
 </template>
 
 <script>
-
-
 export default {
-  name: 'App'
-}
+  name: "App",
+};
 </script>
 
 <style>
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Inter', sans-serif  !important;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
 
+a {
+  text-decoration: none !important;
+}
 </style>

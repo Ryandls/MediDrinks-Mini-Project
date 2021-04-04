@@ -36,6 +36,7 @@ export default {
   background-color: rgba(240, 240, 240, 0.152);
   overflow: hidden;
   border:1px solid rgba(185, 184, 184, 0.349);
+  margin-left: 1rem;
 }
 
 .card img {

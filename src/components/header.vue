@@ -12,12 +12,14 @@
         </a>
       </div>
 
-      <div class="logGithub">
-        <a target="_blank" href="https://github.com/Ryandls">
-          <img src="../assets/github.svg" />
-          @ryandls
-        </a>
-      </div>
+      <button
+        class="logGithub"
+        target="_blank"
+        href="https://github.com/Ryandls"
+      >
+        <img src="../assets/github.svg" />
+        @ryandls
+      </button>
     </nav>
   </header>
 </template>
@@ -27,13 +29,10 @@ export default {};
 </script>
 
 <style scoped>
-header {
-
-  padding: 1rem 2rem 0;
-}
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -52,16 +51,27 @@ h1 {
 span {
   color: rgb(0, 162, 255);
 }
-.logGithub{
-  margin: 2rem 0 2rem;
-  padding: 1rem 5rem 1rem;
-  border:1px solid rgba(167, 162, 162, 0.671);
+.logGithub {
+  display: flex;
+  width: 168px;
+  height: 41px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-right: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #fcfcfc00;
+  border: 1px solid rgba(167, 162, 162, 0.671);
   border-radius: 6px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.logGithub:hover{
-background: rgba(222, 222, 223, 0.959);
+.logGithub:hover {
+  background: rgba(222, 222, 223, 0.959);
 }
 
+.logoMain {
+  margin-left: 3rem;
+}
 </style>
