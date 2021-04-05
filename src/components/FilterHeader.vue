@@ -2,6 +2,7 @@
   <header>
     <div class="divMain">
       <div>
+        <!-- Dropdown utilizando bootstrap -->
         <div class="dropdown ">
           <button
             class="btn"
@@ -13,6 +14,7 @@
           >
             <img src="../assets/list.svg" alt="Menu-List" />
           </button>
+          <!-- Opções do dropdown -->
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Opção 1</a>
             <a class="dropdown-item" href="#">Opção 2</a>
@@ -22,6 +24,7 @@
         </div>
         <div class="menuDropdown"></div>
       </div>
+      <!-- Logo do Projeto, como não tinha imagem, eu fiz com texto -->
       <div class="logoDrink">
         <h1><span>Medi</span>Drinks</h1>
       </div>
@@ -36,7 +39,6 @@ export default {
 </script>
 
 <style scoped>
-
 .divMain {
   display: flex;
   align-items: center;

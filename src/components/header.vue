@@ -1,8 +1,11 @@
 <template>
   <header>
     <nav>
+      <!-- Logo do Projeto-->
       <div class="logoMain">
         <h1><span>Medi</span>Drinks</h1>
+
+        <!-- Link de Brasília no Google Maps -->
         <a
           target="_blank"
           href="https://www.google.com/maps/place/Brasília+-+DF"
@@ -11,7 +14,7 @@
           Brasília, DF
         </a>
       </div>
-
+      <!-- Link do meu github -->
       <a class="logGithub" target="_blank" href="https://github.com/Ryandls">
         <img src="../assets/github.svg" />
         @ryandls
