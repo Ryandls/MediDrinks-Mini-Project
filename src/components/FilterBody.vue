@@ -4,8 +4,9 @@
       <div class="divImg">
         <img :src="imgsrc" :alt="description" />
       </div>
-
+      
       <div class="propsDrink">
+        <!-- Conteúdo do Metodo details by id da API, associando os valores dinamicamente com as props vindo do componente pai utilizando o v-for-->
         <h1>{{ description }}</h1>
         <h2>
           <span>#{{ id }}</span>
@@ -24,7 +25,7 @@
             <button>M</button>
             <button>L</button>
           </ul>
-
+          <!-- Router-link utilizado no button para que ao pressionado ele voltara pra tela inicial -->
           <router-link :to="{ name: 'Home' }">
             <button class="button">
               Voltar para tela inicial
@@ -64,9 +65,9 @@ export default {
 
 <style scoped>
 img {
-  width: 450px;
+  width: 520px;
   min-width: 450;
-  height: 550px;
+  height: 656px;
   min-height: 550;
 }
 .bodyContainer {

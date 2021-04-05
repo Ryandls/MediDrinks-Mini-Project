@@ -2,14 +2,21 @@
   <div>
     <Header />
     <div class="divise">
-      <MainBody :found="drinkList.length" :dataView="dataView" />
+      <ViewStyle
+        :state="viewStyle === 'grid'"
+        @viewSelection="viewStyle = viewStyle === 'grid' ? 'list' : 'grid'"
+      />
     </div>
-    <DataCards :drinkList="drinkList" :classDataView="classDataView" />
+
+    <MainBody :found="drinkList.length" />
+    <!-- listStyle é passado como props para o componente data Cards, dizendo que viewStyle tem que ser diferente de 'grid'-->
+    <DataCards :drinkList="drinkList" :listStyle="viewStyle !== 'grid'" />
   </div>
 </template>
 
 <script>
 import Header from "../components/Header";
+import ViewStyle from "../components/ViewStyle";
 import MainBody from "../components/MainBody";
 import DataCards from "../components/DataCards";
 
@@ -19,15 +26,17 @@ export default {
   name: "Home",
   components: {
     Header,
+    ViewStyle,
     MainBody,
     DataCards,
   },
   data() {
     return {
       drinkList: [],
-      classDataView: "containerCard",
+      viewStyle: "grid",
     };
   },
+
   mounted() {
     axios
       .get(
@@ -35,11 +44,6 @@ export default {
       )
       .then((res) => (this.drinkList = res.data.drinks))
       .catch((error) => console.log(error));
-  },
-  methods: {
-    dataView(value) {
-      this.classDataView = value;
-    },
   },
 };
 </script>
@@ -53,5 +57,9 @@ export default {
   gap: 1rem;
   display: flex;
   flex-wrap: wrap;
+}
+.viewWrap {
+  display: grid;
+  justify-content: center;
 }
 </style>

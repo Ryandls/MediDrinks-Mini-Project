@@ -10,6 +10,9 @@
         <li>
           <span> Catálogo > </span>
         </li>
+
+        <!-- v-for utilizado para pegar o nome do Drink e colocar no Menu utilizando a propsDrink vindo do componente pai  -->
+
         <li v-for="drink of propsDrink" :key="drink.strDrink">
           {{ drink.strDrink }}
         </li>
