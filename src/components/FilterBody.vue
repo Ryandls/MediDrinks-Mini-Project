@@ -122,6 +122,7 @@ button {
   border: none;
   border-radius: 6px;
   color: white;
+  cursor:pointer;
 }
 .button {
   text-decoration: none;

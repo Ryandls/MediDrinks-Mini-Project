@@ -1,16 +1,55 @@
 <template>
   <header>
-    <div class="logoDrink">
-      <h1><span>Medi</span>Drinks</h1>
+    <div class="divMain">
+      <div>
+        <div class="dropdown ">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="../assets/list.svg" alt="Menu-List" />
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Opção 1</a>
+            <a class="dropdown-item" href="#">Opção 2</a>
+            <a class="dropdown-item" href="#">Opção 3</a>
+            <a class="dropdown-item" href="#">Opção 4</a>
+          </div>
+        </div>
+        <div class="menuDropdown"></div>
+      </div>
+      <div class="logoDrink">
+        <h1><span>Medi</span>Drinks</h1>
+      </div>
     </div>
   </header>
 </template>
+
 <script>
 export default {
   name: "FilterHeader",
 };
 </script>
+
 <style scoped>
+
+.divMain {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.logoDrink {
+  align-items: center;
+  margin-left: 40%;
+}
+.menuDropdown {
+  display: flex;
+  width: 50%;
+}
 h1 {
   font-size: 24px;
 }
@@ -20,9 +59,15 @@ span {
 h1 span {
   color: rgb(0, 162, 255);
 }
-.logoDrink {
+button {
+  background: white;
   display: flex;
-  justify-content: center;
-  padding: 2rem;
+}
+button img {
+  display: flex;
+  width: 25px;
+  height: 25px;
+
+  background-color: white;
 }
 </style>
