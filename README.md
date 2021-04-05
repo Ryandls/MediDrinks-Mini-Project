@@ -54,7 +54,7 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
     #Clone repo from github
     git clone https://github.com/Ryandls/MediDrinks-Mini-Project.git
 
-    #Entry in Rocketpay folder
+    #Entry in MediDrinks folder
     cd MediDrinks-Mini-Project
 
     #Install deps
