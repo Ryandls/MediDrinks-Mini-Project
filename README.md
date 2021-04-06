@@ -58,15 +58,17 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
     cd MediDrinks-Mini-Project
 
     #Install deps
-    yarn
-    # org
-    npm install
+    yarn install
+   
 
     #Run the development server:
 
-    npm run dev
-    # or
-    yarn dev
+    yarn serve
+    
+    #if an error occurs:
+    
+    delete the file package-lock.json and yarn install again
+    
 </div>
 <div align="center">
 <h3><strong>Feito por Bryan.</strong><h3>
