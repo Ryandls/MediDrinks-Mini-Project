@@ -57,16 +57,19 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
     #Entry in Rocketpay folder
     cd MediDrinks-Mini-Project
 
-    #Install deps
-    yarn
-    # org
-    npm install
 
-    #Run the development server:
+    #Run project:
 
-    npm run dev
-    # or
-    yarn dev
+    if(!Docker){
+
+    npm install -g docker
+
+    }Else {
+    
+    docker-compose up
+
+    }
+
 </div>
 <div align="center">
 <h3><strong>Feito por Bryan.</strong><h3>
