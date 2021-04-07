@@ -58,6 +58,21 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
 
     #Run project:
 
+    #Install deps
+
+    yarn install
+    # or
+    npm install
+
+    #Run the development server:
+
+    yarn serve
+
+
+
+    #With Docker:
+    
+
     if(!Docker){
 
     npm install -g docker
@@ -68,6 +83,9 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
     docker-compose up
 
     }
+
+
+
 
 Docker for Windows: https://download.docker.com/win/stable/15139/Docker%20for%20Windows%20Installer.exe
 
