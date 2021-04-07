@@ -47,31 +47,53 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
 
 <div id="how-to-test">
 
-
-
     --Open terminal--
 
     #Clone repo from github
     git clone https://github.com/Ryandls/MediDrinks-Mini-Project.git
 
-    #Entry in MediDrinks folder
+    #Entry in Rocketpay folder
     cd MediDrinks-Mini-Project
 
+
+    #Run project:
+
     #Install deps
+  
     yarn install
-   
 
     #Run the development server:
 
     yarn serve
-    
+
     #if an error occurs:
-    
+
     delete the file package-lock.json and yarn install again
+
+
+
+    #With Docker:
     
+
+    if(!Docker){
+
+    npm install -g docker
+    npm install -g docker-compose
+
+    }Else {
+    
+    docker-compose up
+
+    }
+
+
+
+
+Docker for Windows: https://download.docker.com/win/stable/15139/Docker%20for%20Windows%20Installer.exe
+
 </div>
 <div align="center">
-<h3><strong>Feito por Bryan.</strong><h3>
+<h3><strong>Created by Bryan.</strong><h3>
 
 <img alt="AppVideo" title="V" src="./src/assets/giphy.gif" width="100px" height="50"/>
 </div>
