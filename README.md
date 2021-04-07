@@ -12,7 +12,7 @@
   <a href="#-how-to-test">How to test?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 </p>
-63
+
 
 <br>
 
@@ -47,8 +47,6 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
 
 <div id="how-to-test">
 
-
-
     --Open terminal--
 
     #Clone repo from github
@@ -63,6 +61,7 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
     if(!Docker){
 
     npm install -g docker
+    npm install -g docker-compose
 
     }Else {
     
@@ -70,9 +69,11 @@ A partir de uma prototipagem criada no Figma, criar duas páginas utilizando Vue
 
     }
 
+Docker for Windows: https://download.docker.com/win/stable/15139/Docker%20for%20Windows%20Installer.exe
+
 </div>
 <div align="center">
-<h3><strong>Feito por Bryan.</strong><h3>
+<h3><strong>Created by Bryan.</strong><h3>
 
 <img alt="AppVideo" title="V" src="./src/assets/giphy.gif" width="100px" height="50"/>
 </div>
