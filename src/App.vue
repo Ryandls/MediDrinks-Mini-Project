@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+
 * {
   margin: 0;
   padding: 0;
@@ -21,4 +22,5 @@ export default {
 a {
   text-decoration: none !important;
 }
+
 </style>

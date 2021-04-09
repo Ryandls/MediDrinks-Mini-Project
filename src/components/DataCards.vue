@@ -1,10 +1,10 @@
 <template>
-  <div :class="['containerCard', listStyle ? 'flex-col' : 'flex-row']">
+  <div class="containerCard">
 
   <!-- v-for utilizado na primeira página pra pegar todos os drinks não alcoólicos da API e colocar no template -->
 
     <drink-card
-      v-for="drink of drinkList"
+      v-for="drink of drinkList"  
       :key="drink.idDrink"
       :id="parseInt(drink.idDrink)"
       :description="drink.strDrink"
@@ -33,11 +33,5 @@ export default {
   gap: 1rem;
   display: flex;
   flex-wrap: wrap;
-}
-.flex-col {
-  flex-direction: column;
-}
-.flex-row {
-  flex-direction: row;
 }
 </style>
