@@ -1,44 +1,46 @@
 <template>
-  <div class="bodyContainer">
-    <div class="divMain">
-      <div class="divImg">
-        <img :src="imgsrc" :alt="description" />
-      </div>
-      
-      <div class="propsDrink">
-        <!-- Conteúdo do Metodo details by id da API, associando os valores dinamicamente com as props vindo do componente pai utilizando o v-for-->
-        <h1>{{ description }}</h1>
-        <h2>
-          <span>#{{ id }}</span>
-        </h2>
+  <div>
+    <div class="bodyContainer">
+      <div class="divMain">
+        <div class="divImg">
+          <img :src="drink.strDrinkThumb" :alt="drink.strDrink" />
+        </div>
 
-        <div class="div">
-          <div class="Category">
-            <p>Categoria: {{ category }}</p>
-            <p>Alcoólico: {{ alcoholic }}</p>
-            <p>Copo de servir: {{ glass }}</p>
-          </div>
+        <div class="propsDrink">
+          <!-- Conteúdo do Metodo details by id da API, associando os valores dinamicamente com as props vindo do componente pai utilizando o v-for-->
+          <h1>{{ drink.strDrink }}</h1>
+          <h2>
+            <span>#{{ id }}</span>
+          </h2>
 
-          <ul class="tab">
-            <button>XS</button>
-            <button>S</button>
-            <button>M</button>
-            <button>L</button>
-          </ul>
-          <!-- Router-link utilizado no button para que ao pressionado ele voltara pra tela inicial -->
-          <router-link :to="{ name: 'Home' }">
-            <button class="button">
-              Voltar para tela inicial
-            </button>
-          </router-link>
+          <div class="div">
+            <div class="Category">
+              <p>Categoria: {{ drink.strCategory }}</p>
+              <p>Alcoólico: {{ drink.strAlcoholic }}</p>
+              <p>Copo de servir: {{ drink.strGlass }}</p>
+            </div>
 
-          <div class="Ingredient">
-            <ul>
-              <p>Ingredientes</p>
-              <li>{{ ingredient1 }}</li>
-              <li>{{ ingredient2 }}</li>
-              <li>{{ ingredient3 }}</li>
+            <ul class="tab">
+              <button>XS</button>
+              <button>S</button>
+              <button>M</button>
+              <button>L</button>
             </ul>
+            <!-- Router-link utilizado no button para que ao pressionado ele voltara pra tela inicial -->
+            <router-link :to="{ name: 'Home' }">
+              <button class="button">
+                Voltar para tela inicial
+              </button>
+            </router-link>
+
+            <div class="Ingredient">
+              <ul>
+                <p>Ingredientes</p>
+                <li>{{ drink.strIngredient1 }}</li>
+                <li>{{ drink.strIngredient2 }}</li>
+                <li>{{ drink.strIngredient3 }}</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -51,14 +53,7 @@ export default {
   name: "FilterBody",
   props: {
     id: Number,
-    imgsrc: String,
-    description: String,
-    alcoholic: String,
-    glass: String,
-    category: String,
-    ingredient1: String,
-    ingredient2: String,
-    ingredient3: String,
+    drink: String,
   },
 };
 </script>
@@ -123,7 +118,7 @@ button {
   border: none;
   border-radius: 6px;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
 }
 .button {
   text-decoration: none;
